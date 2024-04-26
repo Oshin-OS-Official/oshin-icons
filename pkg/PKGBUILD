@@ -12,6 +12,6 @@ sha256sums=('SKIP')
 
 package() {
 	mkdir -p "${pkgdir}/usr/local/bin/oshin/"
-	cp "${srcdir}/oshin-icons/icons/oshin-official-icon.png" "${pkgdir}/usr/local/bin/oshin/icons"
+	cp "${srcdir}/oshin-icons/icons/oshin-official-icon.png" "${pkgdir}/usr/local/bin/oshin/icons/"
 
 }
