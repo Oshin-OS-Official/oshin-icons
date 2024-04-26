@@ -1,0 +1,17 @@
+# Maintainer GSV Prharsha <gsvprharsha.work@gmail.com>
+
+pkgname=oshin-icons
+pkgver=1.0
+pkgrel=1
+pkgdesc="Official icons for the custom applications of Oshin OS"
+arch=('any')
+url="https://github.com/Oshin-OS-Official/oshin-icons"
+license=("GPL3")
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+package() {
+	mkdir -p "${pkgdir}/usr/local/bin/oshin/"
+	cp "${srcdir}/oshin-icons-${pkgver}/icons/oshin-official-icon.png" "${pkgdir}/usr/local/bin/oshin/"
+
+}
